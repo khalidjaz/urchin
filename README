@@ -2,11 +2,11 @@
 
 2- I used shorter methods as they are easier to read, maintain and test.
 
-3- I changed the logic of the billing system solving the problem of the package's change (in the old version changing the package effected the old users)
+3- changed the logic of the billing system solving the problem of the package's change (in the old version changing the package effected the old users)
 
-4- I wrote tests (better late than never).
+4- wrote tests (better late than never).
 
-5- I upgraded the application from Rails 3.0.3 to 3.1
+5- upgraded the application from Rails 3.0.3 to 3.1
 
 
 Things to do:
