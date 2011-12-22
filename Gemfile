@@ -10,7 +10,7 @@ gem 'foreigner'
 gem 'authlogic', :git => 'git://github.com/binarylogic/authlogic.git'
 gem 'nifty-generators'
 #gem 'delayed_job','2.1.0.pre2'
-gem 'resque' , :require => 'resque/server'
+gem 'resque' ,:git => 'git://github.com/defunkt/resque.git', :require => 'resque/server'
 gem 'resque-forker'
 gem 'resque-retry'
 gem 'will_paginate', '~> 3.0.beta'
@@ -28,7 +28,7 @@ gem 'ruby-debug19', :group => :development
 group :development, :test do
   gem 'rails-erd'
   gem 'railroady'
-  gem 'rspec-rails'
+  gem 'rspec-rails','2.6.0'
   gem "shoulda-matchers"
   gem 'guard'
   gem 'rb-inotify'
