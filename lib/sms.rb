@@ -77,7 +77,7 @@ class Sms
 
   # Convert UTF-8 Message text to HEX formatted in 4 digits
   def as_unicode
-    a=[];@message.text.unpack('U*').each{|c| a << sprintf("%04x",c)};a.join
+    [].tap{|a| @message.text.unpack('U*').each{|c| a << sprintf("%04x",c)}}.join
   end
 
   # Convert Message to URI encoding
