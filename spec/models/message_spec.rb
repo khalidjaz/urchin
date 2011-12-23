@@ -52,6 +52,13 @@ describe Message do
       m.set_unit
       m.unit.should == 2
     end
+    
+    it "when arabic text encoding" do
+      m = messages(:message_001)
+      m.text = "عامر"
+      sms = Sms.new(m);
+      sms.as_unicode.should == "0639062706450631"
+    end
 
     #it "when user daily limit 0" do
     #  u = users(:user_001)
